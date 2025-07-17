@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIA - Menu Digital</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <img src="Untitled design-2.PNG" alt="logo">
+                </div>
+
+                <div class="info-item">
+                    <span>Rua Cerpa Pinto</span>
+                </div>
+
+                <button class="menu-toggle" id="menuToggle">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+            
+            <div class="header-info">
+                <div class="info-item">
+                    <h3>Horário Funcionamento:</h3>
+                    <div class="hora">
+                        <div>Segunda a quinta e Sábado: 07h - 20h</div>
+                        <div>Sexta: 07h - 00h</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav class="navigation" id="navigation">
+        <div class="container">
+            <div class="nav-menu">
+                <button class="nav-item active" data-category="pastelaria">Pastelaria</button>
+                <button class="nav-item" data-category="pequeno-almoco">Pequeno-Almoço</button>
+                <button class="nav-item" data-category="ovos">Ovos</button>
+                <button class="nav-item" data-category="sandes">Sandes</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Category Tabs -->
+    <div class="category-tabs">
+        <div class="container">
+            <div class="tabs-container">
+                <button class="tab active" data-category="pastelaria">Pastelaria</button>
+                <button class="tab" data-category="pequeno-almoco">Pequeno-Almoço</button>
+                <button class="tab" data-category="ovos">Ovos</button>
+                <button class="tab" data-category="sandes">Sandes</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="menu-card">
+                <div class="menu-header">
+                    <h2 id="categoryTitle">Pastelaria</h2>
+                </div>
+                
+                <div class="menu-items" id="menuItems">
+                    <!-- Menu items will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+             <p>Contacte-nos para mais informações</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
